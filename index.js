@@ -17,8 +17,10 @@ app.use('*', (_req, res) => {
   res.status(404).send(message)
 })
 
-app.listen(3098, () => {
-  console.log(`Application is running on port ${3098}`)
+const PORT = process.env.PORT || 3098
+
+app.listen(PORT, () => {
+  console.log(`Application is running on port ${PORT}`)
 })
 
 
