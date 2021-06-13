@@ -1,8 +1,33 @@
+body {
+  padding-top: 7%;
+  padding-left: 10%;
+}
+
 h2 {
-  color: blue
+  color: red
 }
 
 img {
-  height: 30rem;
-  width: 22rem
+  height: 20rem;
+  width: 30rem
+}
+
+ul {
+  list-style: none;
+  padding-left: 0
+}
+a {
+  color: black
+}
+
+footer {
+  font-weight: bolder;
+  padding-top: 3%
+}
+
+@media only screen and (max-width: 650px) {
+  img {
+    width: 75%;
+    height: 25%;
+  }
 }

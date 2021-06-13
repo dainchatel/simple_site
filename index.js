@@ -7,7 +7,7 @@ app.use(express.static('public'))
 app.get('/', (_req, res) => {
   console.log('getting')
   njk.configure(join(__dirname, 'views'))
-  const page = njk.render('index.html', { thing: 'foo_bar' })
+  const page = njk.render('index.html', { image: 'image3.jpg' })
   res.status(200).send(page)
 })
 
