@@ -11,7 +11,7 @@ app.use(express.static('public'))
 app.get('/', (_req, res) => {
   console.log('getting')
   njk.configure(join(__dirname, 'views'))
-  const page = njk.render('index.html', { image: 'image3.jpg' })
+  const page = njk.render('index.html', { image: 'image4.jpg' })
   res.status(200).send(page)
 })
 
